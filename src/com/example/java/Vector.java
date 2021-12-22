@@ -29,6 +29,25 @@ public class Vector {
         return this.x * n.x + this.y * n.y + this.z * n.z;
     }
 
+    static Vector[] createArray(int n) {
+        Vector[] rVectors = new Vector[n];
+        for (int i = 0; i <rVectors.length; i++){
+            rVectors[i] = new Vector();
+        }
+        for (Vector rVector : rVectors) {
+            System.out.println(rVector);
+        }
+        return rVectors;
+    }
+
+    @Override
+    public String toString() {
+        return "Vector{" +
+                "x=" + x +
+                ", y=" + y +
+                ", z=" + z +
+                '}';
+    }
 }
 
 
